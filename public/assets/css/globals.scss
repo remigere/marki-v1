@@ -1,0 +1,171 @@
+@import "@/assets/css/variables";
+
+// create array of colors
+$colors: (
+  "app-blue": $app-blue,
+  "app-red": $app-red,
+  "app-black": $app-black,
+  "app-lightgray": $app-lightgray,
+  "app-darkblue": $app-darkblue,
+  "app-darkred": $app-darkred,
+  "app-yellow": $app-yellow,
+  "app-green": $app-green,
+  "app-white": $app-white,
+  "app-gray": $app-gray,
+  "app-gray2": $app-gray2,
+  "app-gray3": $app-gray3,
+  "app-gray4": $app-gray4,
+  "app-gray5": $app-gray5,
+  "primary-color": $primary,
+  "info-color": $info,
+  "light-color": $light,
+);
+
+// loop and create classes for each color
+@each $color, $value in $colors {
+  .bg-#{$color} {
+    background-color: $value !important;
+  }
+  .text-#{$color} {
+    color: $value !important;
+  }
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.form-control:focus{
+  border-color:#dee2e6;
+  box-shadow: none;
+}
+
+// buttons :
+.app-btn-disabled{
+  background-color: #f70d1a70 !important;
+  border-color: #f70d1a70 !important;
+}
+.app-btn {
+  background-color: $app-red;
+  color: $app-white;
+  border: 0.0625rem solid $app-red;
+  padding: 0.625rem 1.5625rem;
+  border-radius: 0.3125rem;
+  font-size: 0.9375rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background-color: $app-darkred;
+    border: 0.0625rem solid $app-darkred;
+  }
+  text-decoration: none;
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  } 
+}
+.app-btn.app-btn-outline {
+  border: 0.125rem solid $app-red;
+  background-color: transparent;
+  color: $app-red;
+  &:hover {
+    background-color: $app-red;
+    color: $app-white;
+  }
+}
+.app-btn.app-btn-light {
+  background-color: $app-white;
+  color: $app-black;
+  border: 0.0625rem solid $app-white;
+  // on hover outline
+  // &:hover {
+  //   border: 1px solid $app-red;
+  //   color: $app-red;
+  // }
+}
+.app-btn.app-sm-btn {
+  padding: 0.4375rem 1rem;
+  font-size: 0.8125rem;
+}
+.app-btn.bg-light {
+  background-color: $app-white;
+  color: $app-black;
+  border: 0.0625rem solid $app-white;
+  &:hover {
+    background-color: $app-lightgray;
+    border: 0.0625rem solid $app-lightgray;
+  }
+}
+.app-btn.bg-dark {
+  background-color: $app-black;
+  color: $app-white;
+  border: 0.0625rem solid $app-black;
+}
+
+.app-section {
+  padding: 3.125rem 0;
+  // min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.app-section-title {
+  font-size: 2.25rem;
+  font-weight: 500;
+  color: $app-black;
+  margin-bottom: 0;
+  letter-spacing: 0.0644rem;
+}
+
+.app-linear-border {
+  border: 0.0625rem solid;
+  border-image-source: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.form-group.label-inborder{
+  padding:1rem 0;
+  position: relative;
+
+  &>label{
+    position:absolute;
+    top:.25rem;
+    left:.8rem;
+    background-color:white;
+    padding: 0 .3rem;
+    color:$app-gray3;
+    text-transform: lowercase;
+  }
+
+  &>input{
+    padding: .8rem 1rem;
+  }
+  
+
+}
+
+@media (min-width: $lg) {
+  .app-section {
+    padding: 6.25rem 0;
+  }
+  .app-section-title {
+    font-size: 2.875rem;
+    font-weight: 500;
+    color: $app-black;
+    margin-bottom: 0;
+    letter-spacing: 0.0644rem;
+  }
+}
+
+// .form-control {
+//   padding: 15px 20px;
+//   border-radius: 4px;
+//   font-size: 16px;
+// }

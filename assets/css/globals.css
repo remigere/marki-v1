@@ -1,0 +1,88 @@
+* {
+  font-family: "Manrope", sans-serif;
+}
+
+html {
+  font-size: 82.5%;
+}
+
+.icon-home {
+  height: 3.125rem;
+  width: 3rem;
+  margin-right: 0.625rem;
+}
+
+.meal-card {
+  width: 18.75rem;
+  min-width: 18.75rem;
+}
+
+.bg-meal-card {
+  height: 12.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.max-width-text-step {
+  max-width: 12.5rem;
+}
+
+.max-width-row-step {
+  max-width: 62.5rem;
+}
+
+.alpha-section {
+  @media (max-width: 768px) {
+    /* height: 62.5rem !important; */
+  }
+
+  @media (max-width: 992px) {
+    /* height: 62.5rem !important; */
+  }
+}
+
+.review-card {
+  height: 100%;
+  border: 0.0313rem solid rgba(0, 0, 0, 0.2);
+}
+
+
+.container-about {
+  max-width: 37.5rem;
+}
+
+
+.text-header-home {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+.border-footer {
+  border-top: 0.0625rem solid rgba(230, 230, 230, 0.2);
+}
+
+.border-none-input {
+  border: 0;
+}
+
+.footer-card-icon {
+  background-color: rgba(245, 242, 239, 0.1)
+}
+
+
+.question-text{
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.img-about-section{
+  width:27.5rem;
+  height:33.75rem;
+}
+.name-about-section{
+  width:27.5rem;
+}
+
+.articleContainer{
+  height: 100%;
+}

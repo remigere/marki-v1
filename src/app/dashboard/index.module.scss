@@ -1,0 +1,235 @@
+/* General layout styles */
+.layout-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 0px 100px;
+    background: #F7F7F7;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    width: 371px;
+    padding: 0;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 5px 0px;
+    gap: 12px;
+    width: 371px;
+    height: 38px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar-item.active {
+    background-color: #E0E0E0;
+}
+
+.sidebar-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.sidebar-label {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -1px;
+}
+
+.sidebar-label-primary {
+    color: #F70D1A;
+}
+
+.sidebar-label-secondary {
+    color: #000000;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 1089px;
+    padding: 0;
+}
+
+/* Section styles */
+.section {
+    background: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.section-title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: -1px;
+    color: #000000;
+}
+
+.edit-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.edit-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #F70D1A;
+}
+
+/* Form and information styles */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #5B5B5B;
+}
+
+.form-input {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.summary-item-total {
+    font-weight: 600;
+}
+
+.summary-divider {
+    border-top: 1px dashed #E0E0E0;
+}
+
+.allergies {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.allergies-icon {
+    width: 35px;
+    height: 35px;
+    
+}
+
+.preferences {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #5B5B5B;
+}
+
+.nutrition-plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  #F7F7F7;
+    border-radius: 8px;
+    text-align: center;
+    padding: 30px 24px;
+}
+
+.nutrition-plan-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #F70D1A;
+}
+
+.nutrition-plan-subtitle {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+
+.nutrition-plan-description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.join-waitlist-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 30px;
+    background: #F70D1A;
+    border-radius: 5px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #F7F7F7;
+    cursor: pointer;
+}

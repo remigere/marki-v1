@@ -1,0 +1,157 @@
+@import "/assets/css/variables.scss";
+
+.sidebarContainer {
+  min-height: 100vh;
+  background: $app-lightgray;
+  padding: 4rem 0;
+  position: relative;
+
+  .sidebar {
+    width: 300px;
+    display: flex;
+
+    a {
+      text-decoration: none;
+      color: $app-black;
+      cursor: pointer;
+    }
+
+    .sidebarBodyContainer {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: sticky;
+      top: 0;
+
+      .sidebarBtn {
+        display: flex;
+        align-items: center;
+        padding: 1rem 0;
+        border: none;
+        background: transparent;
+
+        .sidebarBtnIcon {
+          margin-right: 1rem;
+        }
+
+        .sidebarBtnLabel {
+          font-size: 1.1rem;
+          cursor: pointer;
+          font-weight: 600;
+        }
+
+        &:hover,
+        &.active {
+          color: $app-red;
+        }
+      }
+    }
+  }
+}
+
+.body {
+  flex: 1;
+  .card {
+    background: $app-white;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.044);
+    width: 100%;
+    margin-bottom: 2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .cardHeader {
+      padding: 1.1rem 2rem;
+      border-bottom: 1px solid $app-lightgray;
+      display: flex;
+      align-items: center;
+      .title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        display: flex;
+        align-items: center;
+        .editIcon {
+          font-size: 1rem;
+          color: $app-red;
+          margin-bottom: .3rem;
+        }
+        .editLabel {
+          font-size: 1rem;
+          font-weight: 600;
+          margin-left: 0.5rem;
+          cursor: pointer;
+          color: $app-red;
+        }
+      }
+    }
+
+    .cardBody {
+      padding: 2rem 2rem;
+    }
+
+    .cardContent {
+      background: $app-lightgray;
+      padding: 1.1rem 2rem;
+      margin-bottom: 2rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .contentTitle {
+        font-size: 1.18rem;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 2rem;
+      }
+
+      .contentRow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid $app-gray5;
+        padding: 0.8rem 0;
+        border-radius: 0.3rem;
+
+        &:last-child {
+          border-bottom: 1px solid $app-gray5;
+        }
+        .contentLabel {
+          font-size: 0.9rem;
+          margin-right: 1rem;
+        }
+        .contentValue {
+          font-size: 0.9rem;
+          font-weight: 600;
+        }
+      }
+
+      p {
+        line-height: 2;
+        margin: 0;
+        padding: 0;
+      }
+
+      .contentFooter {
+        margin-top: 2rem;
+
+        .contentRow {
+          border: none;
+          padding: 0;
+
+          .contentLabel {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
